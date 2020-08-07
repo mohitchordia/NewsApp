@@ -1,0 +1,18 @@
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appBarLayout"
+    app:elevation="@dimen/dp_0"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_76">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/RobotoBoldTitle"
+        app:layout_collapseMode="pin"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_22" />
+
+</android.support.design.widget.AppBarLayout>

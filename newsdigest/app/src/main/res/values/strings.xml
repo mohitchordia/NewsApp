@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NewsDigest</string>
+    <string name="action_settings">Settings</string>
+    <string name="no_connectivity_exception_msg">Please check your network connection</string>
+    <string name="articles_image">this contain the article\'s image</string>
+    <string name="headlines">NEWS DIGEST</string>
+</resources>

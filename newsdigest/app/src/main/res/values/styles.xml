@@ -1,0 +1,65 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:textColorPrimary">@color/textPrimaryColor</item>
+        <item name="android:textColorSecondary">@color/textSecondaryColor</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!--home screen styles-->
+    <style name="RobotoBoldTitle">
+        <item name="android:fontFamily">@font/roboto_slab_bold</item>
+        <item name="android:textSize">@dimen/sp_29</item>
+        <item name="android:textColor">@color/textPrimaryColor</item>
+    </style>
+
+    <style name="RobotoRegularTextLarge">
+        <item name="android:fontFamily">@font/roboto_slab_regular</item>
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="android:textColor">@color/textSecondaryColor</item>
+    </style>
+
+    <style name="RobotoBoldStandard">
+        <item name="android:fontFamily">@font/roboto_slab_bold</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@color/textStandardColor</item>
+    </style>
+
+    <style name="RobotoRegularStandard_12">
+        <item name="android:fontFamily">@font/roboto_slab_regular</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@color/textStandardColor</item>
+    </style>
+
+    <!--detail screen's style-->
+
+    <style name="RobotoBoldHeadline">
+        <item name="android:fontFamily">@font/roboto_slab_bold</item>
+        <item name="android:textSize">@dimen/sp_29</item>
+        <item name="android:textColor">@color/textSecondaryColor</item>
+    </style>
+
+    <style name="RobotoRegularStandard">
+        <item name="android:fontFamily">@font/roboto_slab_regular</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/textStandardColor</item>
+    </style>
+
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_29">29sp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+</resources>
