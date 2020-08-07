@@ -37,10 +37,6 @@ public final class Utils {
         }
     }
 
-    /***
-     * using this method to set the view visible
-     * @param views list of views...
-     */
     public static void showViews(View... views) {
         for (View view : views) {
             if (view == null) continue;
@@ -49,14 +45,6 @@ public final class Utils {
     }
 
 
-    /***
-     * this method used to load image into specified imageView;
-     * @param context pass context for Picasso to initiate;
-     * @param imageView after loading the image will be appear on this widget;
-     * @param imageUrl image url
-     * @param placeHolder
-     * @param errorImageDrawable in case error comes during fetching image from given url then this errorImageDrawable will be appear into imageView;
-     */
     public static void loadImage(Context context, ImageView imageView, String imageUrl, int placeHolder, int errorImageDrawable) {
         Uri url = null;
         if (!TextUtils.isEmpty(imageUrl))
@@ -70,12 +58,7 @@ public final class Utils {
 
     }
 
-    /***
-     * @param context passing to get the network status
-     * @return boolean value as true or false
-     * true: if network is available
-     * false: if not available
-     */
+
     public static boolean isNetworkAvailable(final Context context) {
         if (context == null) return false;
         final ConnectivityManager connectivityManager = ((ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE));

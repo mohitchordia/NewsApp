@@ -37,7 +37,7 @@ public class RestClient { private NewsApi apiService;
     }
 
 
-    //double checked locking singleTon Design.
+
     public NewsApi getApiService() {
         if (apiService == null) {
             synchronized (RestClient.class) {

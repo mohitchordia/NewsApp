@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel;
 
 import com.occapp.newsdigest.network.model.NewsArticles;
 
-class DetailViewModel extends ViewModel {
+public class DetailViewModel extends ViewModel {
     private NewsArticles articlesLiveData;
 
     public DetailViewModel() {

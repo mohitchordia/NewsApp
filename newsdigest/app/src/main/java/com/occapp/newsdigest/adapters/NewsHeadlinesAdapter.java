@@ -30,10 +30,6 @@ public abstract class NewsHeadlinesAdapter extends RecyclerView.Adapter<NewsHead
         this.mOnClickListener = mOnClickListener;
     }
 
-    /***
-     * this method used to add list into existing list
-     * @param mList contains latest list which is fetched based on page wise;
-     */
     public void addAllItem(final List<NewsArticles> mList) {
         if (list == null) {
             list = new ArrayList<>();
