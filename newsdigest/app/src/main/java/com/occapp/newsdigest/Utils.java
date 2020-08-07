@@ -1,4 +1,4 @@
-package com.occapp.newsdigest.network;
+package com.occapp.newsdigest;
 
 
 import android.content.Context;
