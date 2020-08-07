@@ -10,20 +10,20 @@ import javax.inject.Singleton;
 public class DataBaseHelper {
     private static final String DB_NAME = "news_db";
     private final static String TAG = DataBaseHelper.class.getName();
-    private static NewsDataBase db;
+    private static AppDatabase db;
 
     /***
      *
      * @return an instance of AppDatabase
      */
-    public static NewsDataBase getInstance() {
+    public static AppDatabase getInstance() {
         if (db == null) {
             // To make thread safe
             synchronized (DataBaseHelper.class) {
                 // check again as multiple threads
                 if (db == null) {
                     db = Room.databaseBuilder(AppApplication.getContext(),
-                            NewsDataBase.class, DB_NAME).build();
+                            AppDatabase.class, DB_NAME).build();
 
                 }
             }

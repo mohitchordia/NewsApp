@@ -20,13 +20,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-/**
- * This is an adapter which keeps the list of new's articles information;
- * 1. have n number of pages so based on pages getting new list of new's articles information.
- * 2. adding every time new list of information into existing list using addAllItem method.
- * 3. setting into viewHolder
- * 4. add click listener
- */
 
 public abstract class NewsHeadlinesAdapter extends RecyclerView.Adapter<NewsHeadlinesAdapter.MyViewHolder> {
     private final ListItemOnClickListener mOnClickListener;

@@ -2,12 +2,13 @@ package com.occapp.newsdigest.network;
 
 
 import com.occapp.newsdigest.AppApplication;
+import com.occapp.newsdigest.BuildConfig;
 import com.occapp.newsdigest.network.interceptors.ErrorHandlerInterceptor;
 import com.occapp.newsdigest.network.interceptors.HeaderModifierInterceptor;
 
 import javax.inject.Inject;
 
-import butterknife.BuildConfig;
+
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
