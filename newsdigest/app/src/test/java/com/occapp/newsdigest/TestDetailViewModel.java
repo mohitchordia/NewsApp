@@ -2,6 +2,7 @@ package com.occapp.newsdigest;
 
 import android.text.TextUtils;
 
+
 import com.occapp.newsdigest.activities.detail.DetailViewModel;
 import com.occapp.newsdigest.network.model.NewsArticles;
 
@@ -17,11 +18,9 @@ import org.powermock.api.mockito.PowerMockito;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 
-
 import static junit.framework.TestCase.assertEquals;
 import static org.mockito.Matchers.any;
-import static org.mockito.Mockito.spy;
-
+import static org.powermock.api.mockito.PowerMockito.spy;
 
 @RunWith(PowerMockRunner.class)
 @PrepareForTest({TextUtils.class})

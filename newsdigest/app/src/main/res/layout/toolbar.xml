@@ -1,4 +1,4 @@
-<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/appBarLayout"
     app:elevation="@dimen/dp_0"
@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/dp_76">
 
-    <androidx.appcompat.widget.Toolbar
+    <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         style="@style/RobotoBoldTitle"
         app:layout_collapseMode="pin"
@@ -15,4 +15,4 @@
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/dp_22" />
 
-</com.google.android.material.appbar.AppBarLayout>
+</android.support.design.widget.AppBarLayout>

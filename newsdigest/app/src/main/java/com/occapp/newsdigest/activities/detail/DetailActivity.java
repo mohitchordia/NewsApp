@@ -1,16 +1,14 @@
 package com.occapp.newsdigest.activities.detail;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.lifecycle.ViewModelProviders;
-
+import android.arch.lifecycle.ViewModelProviders;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 
 import com.occapp.newsdigest.R;
 import com.occapp.newsdigest.Utils;
@@ -45,6 +43,7 @@ public class DetailActivity extends AppCompatActivity {
         intent.putExtra(SELECTED_ARTICLES_INFO, selectedObject);
         context.startActivity(intent);
     }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

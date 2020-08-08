@@ -1,8 +1,7 @@
 package com.occapp.newsdigest.activities.home;
 
+import android.arch.lifecycle.LiveData;
 import android.util.Log;
-
-import androidx.lifecycle.LiveData;
 
 import com.occapp.newsdigest.database.DataBaseHelper;
 import com.occapp.newsdigest.database.NewsDao;
@@ -18,7 +17,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class HomeModel{
+public class HomeModel {
 
     private static final String TAG = "HomeModel";
     private final NewsDao newsDao;
@@ -40,7 +39,7 @@ public class HomeModel{
 
     public LiveData<List<NewsArticles>> getAllArticles() {
         refreshNewsList();
-        return newsDao.getAll();
+              return newsDao.getAll();
     }
 
     public void refreshNewsList() {

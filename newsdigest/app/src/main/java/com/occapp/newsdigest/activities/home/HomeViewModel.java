@@ -1,8 +1,8 @@
 package com.occapp.newsdigest.activities.home;
 
-import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.ViewModel;
+import android.arch.lifecycle.LiveData;
+import android.arch.lifecycle.MutableLiveData;
+import android.arch.lifecycle.ViewModel;
 
 import com.occapp.newsdigest.components.DaggerComponentsOur;
 import com.occapp.newsdigest.network.model.NewsArticles;

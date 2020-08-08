@@ -8,13 +8,20 @@ import com.occapp.newsdigest.network.interceptors.HeaderModifierInterceptor;
 
 import javax.inject.Inject;
 
-
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class RestClient { private NewsApi apiService;
+/**
+ * 1. created RestClient to setup once, which will improve performance and help to make a server call;
+ * 2. added LogInterceptor only into debug mode;
+ * 3. added ErrorHandlerInterceptor
+ * 4. added HeaderModifier
+ */
+
+public class RestClient {
+    private NewsApiService apiService;
 
     @Inject
     public RestClient() {
@@ -29,16 +36,16 @@ public class RestClient { private NewsApi apiService;
         }
 
         Retrofit restAdapter = new Retrofit.Builder()
-                .baseUrl(NewsApi.BASE_URL)
+                .baseUrl(NewsApiService.BASE_URL)//passing API_URL
                 .addConverterFactory(GsonConverterFactory.create())
-                .client(httpClient.build())
+                .client(httpClient.build())//passing OkHttpClient object
                 .build();
-        apiService = restAdapter.create(NewsApi.class);
+        apiService = restAdapter.create(NewsApiService.class);
     }
 
 
-
-    public NewsApi getApiService() {
+    //double checked locking singleTon Design.
+    public NewsApiService getApiService() {
         if (apiService == null) {
             synchronized (RestClient.class) {
                 if (apiService == null)

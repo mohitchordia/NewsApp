@@ -6,6 +6,7 @@ import com.occapp.newsdigest.database.NewsDao;
 
 import dagger.Component;
 
+
 @Component(modules = {AppDatabase.class, NewsDao.class})
 public interface ComponentsOur {
     HomeModel getHomeModel();

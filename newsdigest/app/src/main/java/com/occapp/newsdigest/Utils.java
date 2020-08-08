@@ -1,6 +1,5 @@
 package com.occapp.newsdigest;
 
-
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.Uri;
@@ -26,10 +25,7 @@ public final class Utils {
 
     }
 
-    /***
-     * using this method to set the view visible
-     * @param views list of views...
-     */
+
     public static void hideViews(View... views) {
         for (View view : views) {
             if (view == null) continue;
@@ -37,12 +33,14 @@ public final class Utils {
         }
     }
 
+
     public static void showViews(View... views) {
         for (View view : views) {
             if (view == null) continue;
             view.setVisibility(View.VISIBLE);
         }
     }
+
 
 
     public static void loadImage(Context context, ImageView imageView, String imageUrl, int placeHolder, int errorImageDrawable) {
@@ -89,4 +87,3 @@ public final class Utils {
     }
 
 }
-

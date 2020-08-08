@@ -1,16 +1,13 @@
 package com.occapp.newsdigest.adapters;
 
-
+import android.support.annotation.NonNull;
+import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.occapp.newsdigest.R;
 import com.occapp.newsdigest.Utils;
@@ -19,7 +16,13 @@ import com.occapp.newsdigest.network.model.NewsArticles;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * This is an adapter which keeps the list of new's articles information;
+ * 1. have n number of pages so based on pages getting new list of new's articles information.
+ * 2. adding every time new list of information into existing list using addAllItem method.
+ * 3. setting into viewHolder
+ * 4. add click listener
+ */
 
 public abstract class NewsHeadlinesAdapter extends RecyclerView.Adapter<NewsHeadlinesAdapter.MyViewHolder> {
     private final ListItemOnClickListener mOnClickListener;
@@ -30,6 +33,10 @@ public abstract class NewsHeadlinesAdapter extends RecyclerView.Adapter<NewsHead
         this.mOnClickListener = mOnClickListener;
     }
 
+    /***
+     * this method used to add list into existing list
+     * @param mList contains latest list which is fetched based on page wise;
+     */
     public void addAllItem(final List<NewsArticles> mList) {
         if (list == null) {
             list = new ArrayList<>();
@@ -38,6 +45,9 @@ public abstract class NewsHeadlinesAdapter extends RecyclerView.Adapter<NewsHead
         this.notifyDataSetChanged();
     }
 
+    /***
+     * clear all the items of list;
+     */
     public void clearAllItems() {
         if (list != null && list.size() > 0) {
             list.clear();

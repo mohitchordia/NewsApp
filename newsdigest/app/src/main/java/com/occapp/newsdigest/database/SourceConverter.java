@@ -1,16 +1,15 @@
 package com.occapp.newsdigest.database;
 
+import android.arch.persistence.room.TypeConverter;
 
-import androidx.room.TypeConverter;
-
+import com.occapp.newsdigest.network.model.NewsSource;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.occapp.newsdigest.network.model.NewsSource;
-
 
 import java.lang.reflect.Type;
 
 public class SourceConverter {
+
 
     @TypeConverter
     public String fromList(NewsSource articles) {

@@ -1,16 +1,14 @@
 package com.occapp.newsdigest.network.model;
 
-
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
+import android.arch.persistence.room.TypeConverters;
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.support.annotation.NonNull;
 
-import androidx.annotation.NonNull;
-import androidx.room.Entity;
-import androidx.room.PrimaryKey;
-import androidx.room.TypeConverters;
-
-import com.google.gson.annotations.SerializedName;
 import com.occapp.newsdigest.database.SourceConverter;
+import com.google.gson.annotations.SerializedName;
 
 @Entity
 public class NewsArticles implements Parcelable {

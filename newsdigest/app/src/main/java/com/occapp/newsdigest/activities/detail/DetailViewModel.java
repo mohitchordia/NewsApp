@@ -1,12 +1,13 @@
 package com.occapp.newsdigest.activities.detail;
 
+import android.arch.lifecycle.ViewModel;
 import android.text.TextUtils;
-
-import androidx.lifecycle.ViewModel;
 
 import com.occapp.newsdigest.network.model.NewsArticles;
 
+
 public class DetailViewModel extends ViewModel {
+
     private NewsArticles articlesLiveData;
 
     public DetailViewModel() {

@@ -1,13 +1,15 @@
 package com.occapp.newsdigest.database;
 
-import androidx.room.Room;
+import android.arch.persistence.room.Room;
 
 import com.occapp.newsdigest.AppApplication;
 
+import javax.inject.Inject;
 import javax.inject.Singleton;
 
 @Singleton
 public class DataBaseHelper {
+
     private static final String DB_NAME = "news_db";
     private final static String TAG = DataBaseHelper.class.getName();
     private static AppDatabase db;
